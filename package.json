@@ -25,14 +25,14 @@
     "eject": "react-scripts eject",
     "lint": "eslint --ext .jsx,.js src",
     "lint:fix": "eslint --ext .jsx,.js --fix src",
-    "format": "prettier --write \"**/*.+(js|jsx|json|yml|yaml|css|scss)\""
+    "format": "prettier --write \"**/*.+(js|jsx|json|css|scss)\""
   },
   "lint-staged": {
     "*.+(js|jsx)": [
       "eslint --fix",
       "git add"
     ],
-    "*.+(json|css|scss|md)": [
+    "*.+(json|css|scss)": [
       "prettier --write",
       "git add"
     ]
